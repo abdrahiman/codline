@@ -1,0 +1,29 @@
+{
+  "name": "cloud room",
+  "version": "1.0.0",
+  "description": "A Web & API server built using TypeScript",
+  "main": "dist",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.18.2",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "tslint": "^5.11.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^4.0.3",
+    "@types/express": "^4.16.0",
+    "typescript": "5.0.3"
+  },
+  "scripts": {
+    "build": "npm run tsc",
+    "tsc": "tsc -p tsconfig.json",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "test": "tsc && ./node_modules/.bin/mocha dist/**/*.spec.js",
+    "lint": "tslint 'src/**/*.ts' --fix",
+    "clean": "rm -rf dist/ .logs/",
+    "start": "node dist"
+  },
+  "author": "Abdrahiman",
+  "license": "ISC"
+}
