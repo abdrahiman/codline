@@ -18,7 +18,7 @@ def git_push():
     run_command(["git", "add", "."])
 
     print("Committing changes...")
-    run_command(["git", "commit", "-m","988"])
+    run_command(["git", "commit", "-m",'"988"'])
 
     print("Pushing changes to the remote repository...")
     run_command(["git", "push","origin","main"])
